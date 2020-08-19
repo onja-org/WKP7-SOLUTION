@@ -20,7 +20,13 @@
 					</fieldset>
 					<fieldset>
 						<label for="author">Book author</label>
-						<input type="text" id="author" placeholder="Author" required />
+						<input
+							type="text"
+							id="author"
+							name="author"
+							placeholder="Author"
+							required
+						/>
 					</fieldset>
 					<fieldset>
 						<label for="genre">Book genre</label>
@@ -45,11 +51,8 @@
 						/>
 					</fieldset>
 					<fieldset>
-						<label for="read">Status</label>
-						<select name="read" id="read" required>
-							<option value="false" selected>Not read</option>
-							<option value="true">Read</option>
-						</select>
+						<label for="read">Read</label>
+						<input type="checkbox" name="read" id="read" />
 					</fieldset>
 					<fieldset>
 						<button type="submit">Add</button>
@@ -65,6 +68,7 @@
 						<th>Pages</th>
 						<th>Read</th>
 					</thead>
+					<!-- I will put my data in the tbody -->
 					<tbody></tbody>
 				</table>
 			</section>
